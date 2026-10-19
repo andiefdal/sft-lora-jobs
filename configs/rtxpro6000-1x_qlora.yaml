@@ -1,0 +1,33 @@
+# 1x RTX PRO 6000 (96 GB) — 4-bit base + LoRA, single container, 24 h ceiling
+run_name: rtxpro6000-1x_qlora
+base_model: Qwen/Qwen2.5-32B-Instruct
+
+data_path: /data/corpus        # mounted Volume, read-only, not committed
+max_seq_len: 4096
+batch_size: 2
+grad_accum: 8
+seed: 1337
+
+lora:
+  r: 32
+  alpha: 64
+  dropout: 0.05
+  target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+    - gate_proj
+    - up_proj
+    - down_proj
+
+lr: 1.4e-4
+weight_decay: 0.01
+warmup_steps: 40
+max_steps: 4000
+
+# cadence — must match the [INFO] Checkpoint saved / [EVAL] lines in the log
+save_steps: 15
+eval_steps: 50
+
+output_dir: /output
