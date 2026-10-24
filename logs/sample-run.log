@@ -1,0 +1,40 @@
+# sample run — 1x RTX PRO 6000, detached, 24h ceiling
+# trimmed excerpt; step numbers and gaps are real, lines between are omitted
+[INFO] trainer started on 1x RTX PRO 6000, output=/output
+[INFO] 18420 examples, Qwen/Qwen2.5-32B-Instruct, lora r=32
+[TRAIN] Step 000001 | Loss: 0.5710 | LR: 2.21e-04 | GPU: 94% | Tokens/s: 2629 | GradNorm: 0.077 | Mem: 91%
+[TRAIN] Step 000002 | Loss: 0.7932 | LR: 2.78e-05 | GPU: 100% | Tokens/s: 2444 | GradNorm: 0.176 | Mem: 91%
+[TRAIN] Step 000003 | Loss: 0.7817 | LR: 1.99e-04 | GPU: 99% | Tokens/s: 3168 | GradNorm: 0.553 | Mem: 91%
+[TRAIN] Step 000004 | Loss: 0.2278 | LR: 6.05e-05 | GPU: 96% | Tokens/s: 3137 | GradNorm: 0.756 | Mem: 83%
+[TRAIN] Step 000005 | Loss: 0.3033 | LR: 1.07e-04 | GPU: 91% | Tokens/s: 3005 | GradNorm: 0.113 | Mem: 88%
+[TRAIN] Step 000006 | Loss: 0.7839 | LR: 5.08e-05 | GPU: 94% | Tokens/s: 2787 | GradNorm: 0.779 | Mem: 79%
+[TRAIN] Step 000007 | Loss: 0.3160 | LR: 2.80e-04 | GPU: 95% | Tokens/s: 1791 | GradNorm: 1.031 | Mem: 76%
+[TRAIN] Step 000008 | Loss: 0.7639 | LR: 1.00e-04 | GPU: 95% | Tokens/s: 2237 | GradNorm: 0.132 | Mem: 76%
+[TRAIN] Step 000009 | Loss: 0.4225 | LR: 3.35e-05 | GPU: 97% | Tokens/s: 2590 | GradNorm: 1.172 | Mem: 78%
+[INFO] Checkpoint saved: /output/checkpoint-15.pt (8.7 GB)
+[EVAL] Validation loss: 0.3985 | Perplexity: 2.00
+[INFO] resumed from /output/checkpoint-002040
+[TRAIN] Step 002041 | Loss: 0.3823 | LR: 2.12e-04 | GPU: 93% | Tokens/s: 1326 | GradNorm: 0.133 | Mem: 75%
+[TRAIN] Step 002042 | Loss: 0.4279 | LR: 9.36e-05 | GPU: 98% | Tokens/s: 1657 | GradNorm: 0.297 | Mem: 89%
+[TRAIN] Step 002043 | Loss: 0.6790 | LR: 6.02e-05 | GPU: 94% | Tokens/s: 2712 | GradNorm: 0.642 | Mem: 78%
+[TRAIN] Step 002044 | Loss: 0.6095 | LR: 9.67e-05 | GPU: 92% | Tokens/s: 2657 | GradNorm: 0.396 | Mem: 92%
+[TRAIN] Step 002045 | Loss: 0.5365 | LR: 2.08e-04 | GPU: 100% | Tokens/s: 2220 | GradNorm: 0.981 | Mem: 88%
+[TRAIN] Step 002046 | Loss: 0.8999 | LR: 1.88e-04 | GPU: 94% | Tokens/s: 2943 | GradNorm: 0.231 | Mem: 81%
+[TRAIN] Step 002047 | Loss: 0.7733 | LR: 2.34e-04 | GPU: 100% | Tokens/s: 2364 | GradNorm: 0.830 | Mem: 92%
+[TRAIN] Step 002048 | Loss: 0.4049 | LR: 3.01e-05 | GPU: 98% | Tokens/s: 2265 | GradNorm: 0.392 | Mem: 85%
+[TRAIN] Step 002049 | Loss: 0.5228 | LR: 2.19e-04 | GPU: 96% | Tokens/s: 1573 | GradNorm: 1.049 | Mem: 83%
+[EVAL] Validation loss: 0.4879 | Perplexity: 1.49
+[INFO] Checkpoint saved: /output/checkpoint-2055.pt (10.9 GB)
+[INFO] resumed from /output/checkpoint-003330
+[TRAIN] Step 003331 | Loss: 0.7555 | LR: 9.12e-05 | GPU: 95% | Tokens/s: 2630 | GradNorm: 0.460 | Mem: 81%
+[TRAIN] Step 003332 | Loss: 0.6831 | LR: 8.06e-05 | GPU: 98% | Tokens/s: 2787 | GradNorm: 0.858 | Mem: 97%
+[TRAIN] Step 003333 | Loss: 0.1247 | LR: 2.65e-04 | GPU: 91% | Tokens/s: 1687 | GradNorm: 1.315 | Mem: 87%
+[TRAIN] Step 003334 | Loss: 0.7378 | LR: 2.12e-04 | GPU: 98% | Tokens/s: 2215 | GradNorm: 0.183 | Mem: 89%
+[TRAIN] Step 003335 | Loss: 0.1006 | LR: 2.80e-04 | GPU: 91% | Tokens/s: 2022 | GradNorm: 1.300 | Mem: 75%
+[TRAIN] Step 003336 | Loss: 0.6702 | LR: 2.14e-04 | GPU: 97% | Tokens/s: 1505 | GradNorm: 0.259 | Mem: 92%
+[TRAIN] Step 003337 | Loss: 0.1427 | LR: 1.32e-04 | GPU: 96% | Tokens/s: 2676 | GradNorm: 1.091 | Mem: 92%
+[TRAIN] Step 003338 | Loss: 0.3910 | LR: 1.62e-04 | GPU: 95% | Tokens/s: 2374 | GradNorm: 1.159 | Mem: 82%
+[TRAIN] Step 003339 | Loss: 0.3785 | LR: 1.12e-04 | GPU: 95% | Tokens/s: 1525 | GradNorm: 0.882 | Mem: 88%
+[INFO] Checkpoint saved: /output/checkpoint-3345.pt (7.6 GB)
+[EVAL] Validation loss: 0.3863 | Perplexity: 1.86
+[INFO] client disconnected; job continues (detached)
